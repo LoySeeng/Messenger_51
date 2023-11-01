@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartScreen</class>
+ <widget class="QWidget" name="StartScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>335</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="ServerWindow" name="server_page"/>
+     <widget class="Login_moder_Form" name="login_page"/>
+     <widget class="Moderator_basement" name="base_page"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ServerWindow</class>
+   <extends>QWidget</extends>
+   <header>serverwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Login_moder_Form</class>
+   <extends>QWidget</extends>
+   <header>login_moder_form.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Moderator_basement</class>
+   <extends>QWidget</extends>
+   <header>moderator_basement.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
