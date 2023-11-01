@@ -23,7 +23,7 @@ void ServerWindow::power_server()
     }
 
     DBase = QSqlDatabase::addDatabase("QSQLITE");
-    DBase.setDatabaseName("D:/Programming/QT_projects/Server/MESSENGER_51.db");
+    DBase.setDatabaseName(".\MESSENGER_51.db");
 
     if(DBase.open()) {
         qDebug() << "Yes";
